@@ -11,7 +11,8 @@
 		let k = 0;
 
 		array.forEach((el: HTMLElement) => {
-			k += 1000;
+			k += 2000;
+
 			setTimeout(
 				() =>
 					array.delete(el) &&

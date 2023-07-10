@@ -460,9 +460,13 @@
 					)
 			);
 
-		array.forEach((el: HTMLElement) =>
-			setTimeout(() => array.delete(el) && el.click(), 3000)
-		);
+		let k = 0;
+
+		array.forEach((el: HTMLElement) => {
+			k += 2000;
+
+			setTimeout(() => array.delete(el) && el.click(), 3000 + k);
+		});
 
 		array.size === 0
 			? stay
@@ -473,6 +477,5 @@
 
 	init();
 
-	setInterval(() => init(), 150000);
 	setInterval(() => init(false), 800000);
 })();
