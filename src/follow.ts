@@ -410,8 +410,6 @@
 									"test",
 									"tester",
 									"testing",
-									"the",
-									"to",
 									"trainer",
 									"tree",
 									"type",
@@ -477,5 +475,6 @@
 
 	init();
 
-	setInterval(() => init(false), 800000);
+	setInterval(() => init(), 10000);
+	setInterval(() => init(false), 30000);
 })();
