@@ -462,7 +462,7 @@
 
 		init();
 
-		setInterval(() => window.scrollTo(0, window.scrollY + 500), 15000);
+		// setInterval(() => window.scrollTo(0, window.scrollY + 500), 15000);
 		setInterval(() => init(), 80000);
 	}, 5000);
 })();
