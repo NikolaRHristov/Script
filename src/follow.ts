@@ -7,7 +7,7 @@
 						'[data-testid="confirmationSheetCancel"]'
 					)
 					?.click(),
-			5000
+			50
 		);
 
 		const init = () => {
@@ -436,13 +436,13 @@
 			let k = 0;
 
 			for (const el of array) {
-				k += 10000;
+				k += 1000;
 
 				setTimeout(() => {
 					el.scrollIntoView();
 					array.delete(el);
 					el.click();
-				}, 5000 + k);
+				}, 1000 + k);
 			}
 
 			array.size === 0 ? history.go(0) : {};
@@ -451,6 +451,6 @@
 		init();
 
 		// setInterval(() => window.scrollTo(0, window.scrollY + 500), 15000);
-		setInterval(() => init(), 80000);
-	}, 5000);
+		setInterval(() => init(), 1000);
+	}, 10000);
 })();
