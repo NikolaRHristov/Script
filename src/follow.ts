@@ -1,5 +1,15 @@
 (() => {
 	setTimeout(() => {
+		setInterval(
+			() =>
+				document
+					.querySelector<HTMLElement>(
+						'[data-testid="confirmationSheetCancel"]'
+					)
+					?.click(),
+			5000
+		);
+
 		const init = () => {
 			const array = new Set<HTMLElement>();
 
@@ -448,7 +458,7 @@
 			let k = 0;
 
 			for (const el of array) {
-				k += 5000;
+				k += 10000;
 
 				setTimeout(() => {
 					el.scrollIntoView();
