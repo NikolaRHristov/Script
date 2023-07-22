@@ -434,7 +434,7 @@
 								)
 									? el
 											.querySelectorAll<HTMLElement>(
-												'[data-testid*="-follow"]'
+												'[data-testid*="-unfollow"]'
 											)
 											.forEach((follow) =>
 												array.add(follow)
