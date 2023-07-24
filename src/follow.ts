@@ -436,13 +436,13 @@
 			let k = 0;
 
 			for (const el of array) {
-				k += 1000;
+				k += 10000;
 
 				setTimeout(() => {
 					el.scrollIntoView();
 					array.delete(el);
 					el.click();
-				}, 1000 + k);
+				}, 10000 + k);
 			}
 
 			array.size === 0 ? history.go(0) : {};
@@ -450,7 +450,7 @@
 
 		init();
 
-		// setInterval(() => window.scrollTo(0, window.scrollY + 500), 15000);
-		setInterval(() => init(), 1000);
+		setInterval(() => window.scrollTo(0, window.scrollY + 500), 300000);
+		setInterval(() => init(), 150000);
 	}, 10000);
 })();
