@@ -9,18 +9,18 @@
 		let k = 0;
 
 		for (const el of array) {
-			k += 1000;
+			k += 50;
 
 			setTimeout(() => {
 				el.scrollIntoView();
 				array.delete(el);
 				el.click();
-			}, 1000 + k);
+			}, 50 + k);
 		}
 	};
 
 	init();
 
-	setInterval(() => window.scrollTo(0, window.scrollY + 500), 15000);
-	setInterval(() => init(), 10000);
+	setInterval(() => window.scrollTo(0, window.scrollY + 500), 1000);
+	setInterval(() => init(), 1000);
 })();
