@@ -17,8 +17,6 @@
 				el.click();
 			}, 1000 + k);
 		}
-
-		array.size === 0 ? history.go(0) : {};
 	};
 
 	init();
