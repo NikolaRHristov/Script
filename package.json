@@ -4,8 +4,8 @@
 	"private": true,
 	"license": "MIT",
 	"type": "module",
-	"main": "./dist/Index.js",
-	"types": "./dist/Index.d.ts",
+	"main": "./Target/Index.js",
+	"types": "./Target/Index.d.ts",
 	"scripts": {
 		"prepublishOnly": "lightrix build 'Source/**/*.ts'"
 	},
