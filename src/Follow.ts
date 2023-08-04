@@ -181,7 +181,7 @@
 										"analyst",
 										"angular",
 										"auditor",
-										"boolean",
+										"Boolean",
 										"capture",
 										"casting",
 										"clojure",
