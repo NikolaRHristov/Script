@@ -1,19 +1,19 @@
 (() => {
 	const init = () => {
-		const array = new Set<HTMLElement>();
+		const _Array = new Set<HTMLElement>();
 
 		document
 			.querySelectorAll<HTMLElement>('[data-testid="unlike"]')
-			.forEach((el) => array.add(el));
+			.forEach((el) => _Array.add(el));
 
 		let k = 0;
 
-		for (const el of array) {
+		for (const el of _Array) {
 			k += 50;
 
 			setTimeout(() => {
 				el.scrollIntoView();
-				array.delete(el);
+				_Array.delete(el);
 				el.click();
 			}, 50 + k);
 		}
