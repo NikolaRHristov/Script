@@ -15,10 +15,10 @@
 								document
 									.querySelector('[aria-label="Send now"]')
 									?.click(),
-							1500,
+							1500
 						) &&
 						e.click(),
-					3e3 + o,
+					3e3 + o
 				),
 				setTimeout(() => {
 					document.querySelectorAll('[aria-label="Add a note"]')
@@ -33,7 +33,7 @@
 			t.size === 0 &&
 				document
 					.querySelector(
-						'.artdeco-pagination__button[aria-label="Next"]',
+						'.artdeco-pagination__button[aria-label="Next"]'
 					)
 					?.click();
 	};

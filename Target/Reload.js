@@ -4,7 +4,7 @@
 			.querySelectorAll('[data-testid="ScrollSnap-List"] > [role="tab"]')
 			.forEach((t, n) => {
 				new Number(
-					new URL(document.location.href).searchParams.get("Index"),
+					new URL(document.location.href).searchParams.get("Index")
 				);
 			});
 	};

@@ -6,7 +6,7 @@
 			.forEach((e) =>
 				e
 					.querySelectorAll(
-						'[dir="auto"] > span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0',
+						'[dir="auto"] > span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0'
 					)
 					.forEach((a) =>
 						a.innerHTML
@@ -429,16 +429,16 @@
 									r
 										.toLocaleLowerCase()
 										.replaceAll("#", "")
-										.replaceAll("-", ""),
+										.replaceAll("-", "")
 								)
 									? e
 											.querySelectorAll(
-												'[data-testid*="-unfollow"]',
+												'[data-testid*="-unfollow"]'
 											)
 											.forEach((i) => o.add(i))
-									: {},
-							),
-					),
+									: {}
+							)
+					)
 			);
 		let n = 0;
 		for (const e of o)

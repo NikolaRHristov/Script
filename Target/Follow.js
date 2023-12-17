@@ -4,7 +4,7 @@ setTimeout(() => {
 			document
 				.querySelector('[data-testid="confirmationSheetCancel"]')
 				?.click(),
-		50,
+		50
 	);
 	const o = () => {
 		const t = new Set();
@@ -12,7 +12,7 @@ setTimeout(() => {
 			.querySelectorAll('[data-testid="cellInnerDiv"]')
 			.forEach(({ querySelectorAll: e }) =>
 				e(
-					'[dir="auto"] > span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0',
+					'[dir="auto"] > span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0'
 				).forEach(({ innerHTML: a }) =>
 					a
 						.split(" ")
@@ -412,14 +412,14 @@ setTimeout(() => {
 								i
 									.toLocaleLowerCase()
 									.replaceAll("#", "")
-									.replaceAll("-", ""),
+									.replaceAll("-", "")
 							)
 								? e('[data-testid*="-follow"]').forEach((r) =>
-										t.add(r),
-								  )
-								: {},
-						),
-				),
+										t.add(r)
+									)
+								: {}
+						)
+				)
 			);
 		let n = 0;
 		for (const e of t)

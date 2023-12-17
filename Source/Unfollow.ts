@@ -7,7 +7,7 @@
 			.forEach((el) =>
 				el
 					.querySelectorAll(
-						'[dir="auto"] > span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0',
+						'[dir="auto"] > span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0'
 					)
 					.forEach((_el) =>
 						_el.innerHTML
@@ -430,18 +430,18 @@
 									word
 										.toLocaleLowerCase()
 										.replaceAll("#", "")
-										.replaceAll("-", ""),
+										.replaceAll("-", "")
 								)
 									? el
 											.querySelectorAll<HTMLElement>(
-												'[data-testid*="-unfollow"]',
+												'[data-testid*="-unfollow"]'
 											)
 											.forEach((follow) =>
-												array.add(follow),
+												array.add(follow)
 											)
-									: {},
-							),
-					),
+									: {}
+							)
+					)
 			);
 
 		let k = 0;
