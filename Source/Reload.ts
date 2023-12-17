@@ -2,12 +2,12 @@
 	const init = () => {
 		document
 			.querySelectorAll<HTMLAnchorElement>(
-				'[data-testid="ScrollSnap-List"] > [role="tab"]'
+				'[data-testid="ScrollSnap-List"] > [role="tab"]',
 			)
 			.forEach((Element, Index) => {
 				Index ===
 				new Number(
-					new URL(document.location.href).searchParams.get("Index")
+					new URL(document.location.href).searchParams.get("Index"),
 				)
 					? Element
 					: {};
