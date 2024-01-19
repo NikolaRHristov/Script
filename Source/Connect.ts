@@ -4,7 +4,7 @@
 
 		document
 			.querySelectorAll<HTMLElement>(
-				'.artdeco-button[aria-label^="Invite"]'
+				'.artdeco-button[aria-label^="Invite"]',
 			)
 			.forEach((el) => array.add(el));
 
@@ -20,13 +20,13 @@
 						() =>
 							document
 								.querySelector<HTMLElement>(
-									'[aria-label="Send now"]'
+									'[aria-label="Send now"]',
 								)
 								?.click(),
-						1500
+						1500,
 					) &&
 					el.click(),
-				3000 + k
+				3000 + k,
 			);
 
 			setTimeout(() => {
@@ -47,7 +47,7 @@
 		array.size === 0
 			? document
 					.querySelector<HTMLElement>(
-						'.artdeco-pagination__button[aria-label="Next"]'
+						'.artdeco-pagination__button[aria-label="Next"]',
 					)
 					?.click()
 			: true;

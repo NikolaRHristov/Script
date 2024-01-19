@@ -4,10 +4,10 @@
 			() =>
 				document
 					.querySelector<HTMLElement>(
-						'[data-testid="confirmationSheetCancel"]'
+						'[data-testid="confirmationSheetCancel"]',
 					)
 					?.click(),
-			50
+			50,
 		);
 
 		const init = () => {
@@ -17,7 +17,7 @@
 				.querySelectorAll('[data-testid="cellInnerDiv"]')
 				.forEach(({ querySelectorAll }) =>
 					querySelectorAll(
-						'[dir="auto"] > span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0'
+						'[dir="auto"] > span.css-901oao.css-16my406.r-poiln3.r-bcqeeo.r-qvutc0',
 					).forEach(({ innerHTML }) =>
 						innerHTML
 							.split(" ")
@@ -417,14 +417,14 @@
 									word
 										.toLocaleLowerCase()
 										.replaceAll("#", "")
-										.replaceAll("-", "")
+										.replaceAll("-", ""),
 								)
 									? querySelectorAll<HTMLElement>(
-											'[data-testid*="-follow"]'
-										).forEach((follow) => array.add(follow))
-									: {}
-							)
-					)
+											'[data-testid*="-follow"]',
+									  ).forEach((follow) => array.add(follow))
+									: {},
+							),
+					),
 				);
 
 			let k = 0;
