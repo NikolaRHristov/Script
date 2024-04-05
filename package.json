@@ -16,6 +16,12 @@
 	},
 	"devDependencies": {
 		"@playform/build": "0.0.5"
+<<<<<<< HEAD
+=======
+	},
+	"optionalDependencies": {
+		"@playform/document": "0.0.6"
+>>>>>>> 9ab646d470f64e1962c6d64cb034fed37c1dd79f
 	},
 	"publishConfig": {
 		"access": "public"
