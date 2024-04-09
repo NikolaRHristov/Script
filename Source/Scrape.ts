@@ -10,7 +10,7 @@
 			setTimeout(() => {
 				document
 					.querySelector<HTMLElement>(
-						".upnext-item.active + .upnext-item img",
+						".upnext-item.active + .upnext-item img"
 					)
 					?.click();
 			}, 1000);
