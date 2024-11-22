@@ -35,6 +35,7 @@
 						.length > 0
 				) {
 					console.log("Remove");
+
 					document
 						.querySelector<HTMLElement>('[aria-label="Dismiss"]')
 						?.click();

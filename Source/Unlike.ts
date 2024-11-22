@@ -22,5 +22,6 @@
 	init();
 
 	setInterval(() => window.scrollTo(0, window.scrollY + 500), 1000);
+
 	setInterval(() => init(), 1000);
 })();

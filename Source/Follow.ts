@@ -445,6 +445,7 @@
 		init();
 
 		setInterval(() => window.scrollTo(0, window.scrollY + 500), 2000);
+
 		setInterval(() => init(), 2000);
 	}, 2000);
 })();
